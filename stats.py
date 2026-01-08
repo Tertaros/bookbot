@@ -15,5 +15,19 @@ def count_chars(text):
     
     return char_dict
 
+def sort_on(items):
+    return items["num"]
+
+def sort_dict(dictionary):
+    dict_list = []
+    
+    for key, value in dictionary.items():
+        dict_list.append({"letter": key, "num": value})
+
+    dict_list.sort(reverse=True, key=sort_on)
+    return dict_list
+
+
+
 
     
